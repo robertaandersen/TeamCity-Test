@@ -14,7 +14,7 @@ namespace TeamCity_Test.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2", "val3" };
         }
 
         // GET api/values/5
