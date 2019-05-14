@@ -4,8 +4,8 @@ services:
     build: .      
     container_name: team-city
     volumes:
-     - ./datadir:/data/teamcity_server/datadir
-     - ./logs:/opt/teamcity/logs  
+     - ./persistence/datadir:/data/teamcity_server/datadir
+     - ./persistence/logs:/opt/teamcity/logs  
     networks:
     - teamcity
     ports:
@@ -17,7 +17,7 @@ services:
     environment:
         SERVER_URL : "http://team-city:8111/"
     volumes:
-     - ./agentconf:/data/teamcity_agent/conf
+     - ./persistence/agentconf:/data/teamcity_agent/conf
     depends_on:
     - team-city
     networks:
