@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+./Dockerstuff/persistence
+
 # User-specific files
 *.suo
 *.user
