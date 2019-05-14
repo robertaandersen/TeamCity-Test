@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="9499a4fc-0a7a-4d97-87aa-7702b3fa024d" type="jetbrains.git" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
+  <name>https://github.com/robertreynisson/TeamCity-Test#refs/heads/master</name>
+  <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+  <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+  <param name="authMethod" value="PASSWORD" />
+  <param name="branch" value="refs/heads/master" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="secure:password" value="zxxe1e0989ee4373150691dcb2d304f1744" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="url" value="https://github.com/robertreynisson/TeamCity-Test" />
+  <param name="useAlternates" value="true" />
+  <param name="username" value="robertreynisson@gmail.com" />
+  <param name="usernameStyle" value="USERID" />
+</vcs-root>
+

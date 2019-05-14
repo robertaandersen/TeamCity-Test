@@ -1,0 +1,28 @@
+version: '2'
+services:
+  team-city:
+    build: .      
+    container_name: team-city
+    volumes:
+     - ./datadir:/data/teamcity_server/datadir
+     - ./logs:/opt/teamcity/logs  
+    networks:
+    - teamcity
+    ports:
+      - "8111:8111"
+
+  team-city-agent:
+    image: jetbrains/teamcity-agent
+    container_name: team-city-agent
+    environment:
+        SERVER_URL : "http://team-city:8111/"
+    volumes:
+     - ./agentconf:/data/teamcity_agent/conf
+    depends_on:
+    - team-city
+    networks:
+    - teamcity
+
+networks:
+  teamcity:
+    driver: bridge
