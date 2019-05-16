@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TeamCity-Test.csproj"
+                "${workspaceFolder}/TeamCityTest.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TeamCity-Test.csproj"
+                "${workspaceFolder}/TeamCityTest.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/TeamCity-Test.csproj"
+                "${workspaceFolder}/TeamCityTest.csproj"
             ],
             "problemMatcher": "$tsc"
         }
